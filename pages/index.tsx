@@ -38,6 +38,13 @@ export default function Home() {
         <ul>
           <li>Architected and developed the front-end of Allbound's new payment module.</li>
           <li>Served as a principal consultant for the architecture of future Node APIs.</li>
+          <li>
+            Engineered a client-side database solution for efficient local storage and data table
+            management.
+          </li>
+          <li>
+            Developed a new MDF feature that directly contributed to the acquisition of new clients.
+          </li>
         </ul>
         <h3>Shard</h3>
         <p>
