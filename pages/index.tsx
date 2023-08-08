@@ -133,37 +133,7 @@ export default function Home() {
         <p>Graduated second in class with a 3.92 GPA</p>
       </div>
 
-      {/* <style jsx>{`
-        div.resume {
-          font-family: Arial, Helvetica, sans-serif;
-          margin: auto;
-          max-width: 800px;
-        }
-        h1 {
-          text-align: center;
-          margin: 0.4rem;
-          font-weight: 500;
-        }
-        h2 {
-          margin: 0.1rem;
-          margin-left: 0;
-          margin-top: 2rem;
-          font-weight: 500;
-          border-bottom: 2px solid black;
-        }
-        h3 {
-          font-weight: 600;
-        }
-        .email {
-          text-align: center;
-          font-size: 0.8em;
-          font-weight: 600;
-        }
-        em {
-          color: rgb(90, 90, 90);
-          font-weight: 600;
-        }
-      `}</style> */}
+      <style jsx>{``}</style>
     </div>
   );
 }
