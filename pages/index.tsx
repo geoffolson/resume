@@ -1,5 +1,48 @@
 import Head from "next/head";
 
+const experiences: {
+  company: string;
+  title: string;
+  duration: string;
+  accomplishments: string[];
+}[] = [
+  {
+    company: "Allbound",
+    title: "Senior Software Engineer",
+    duration: "August 2022 to Current",
+    accomplishments: [
+      "Architected and developed the front-end of Allbound's new payment module.",
+      "Served as a principal consultant for the architecture of future Node APIs.",
+      "Engineered a client-side database solution for efficient local storage and data table management.",
+      "Developed a new MDF feature that directly contributed to the acquisition of new clients.",
+    ],
+  },
+  {
+    company: "Shard",
+    title: "Software Engineer",
+    duration: "May 2021 to August 2022",
+    accomplishments: [
+      "Designed and developed full-stack web applications to meet the specific needs of clients.",
+      "Oversaw maintenance and feature enhancements for existing applications.",
+      "Optimized performance of a legacy application to support client's growing database, improving scalability.",
+      "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.",
+    ],
+  },
+  {
+    company: "Apcon",
+    title: "Software Engineer",
+    duration: "August 2019 to May 2021",
+    accomplishments: [
+      "Developed full-stack applications using various technology stacks, improving system efficiency and performance.",
+      "Engineered a remote power management microservice for lab equipment.",
+      "Built a REST API for a demonstration site, allowing the sales team to showcase products and services to potential customers remotely.",
+      "Migrated the demonstration site to React.js from jQuery for improved performance and user experience. Back-end developed using ASP.NET and MongoDB.",
+      "Developed a QA application to generate network traffic using PCAPs.",
+      "Created a power consumption monitoring dashboard for lab devices, providing vital statistics to users",
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <div>
@@ -28,73 +71,24 @@ export default function Home() {
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
         <h2>Experience</h2>
-        <h3>Allbound</h3>
-        <p>
-          <em>August 2022 to Current</em>
-        </p>
-        <p>
-          <strong>Senior Software Engineer</strong>
-        </p>
-        <ul>
-          <li>Architected and developed the front-end of Allbound's new payment module.</li>
-          <li>Served as a principal consultant for the architecture of future Node APIs.</li>
-          <li>
-            Engineered a client-side database solution for efficient local storage and data table
-            management.
-          </li>
-          <li>
-            Developed a new MDF feature that directly contributed to the acquisition of new clients.
-          </li>
-        </ul>
-        <h3>Shard</h3>
-        <p>
-          <em>May 2021 to August 2022</em>
-        </p>
-        <p>
-          <strong>Software Engineer</strong>
-        </p>
-        <ul>
-          <li>
-            Designed and developed full-stack web applications to meet the specific needs of
-            clients.
-          </li>
-          <li>Oversaw maintenance and feature enhancements for existing applications.</li>
-          <li>
-            Optimized performance of a legacy application to support client's growing database,
-            improving scalability.
-          </li>
-          <li>
-            Collaborated with UI/UX designers and team members to build several successful MVPs
-            using TypeScript, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.
-          </li>
-        </ul>
-        <h3>Apcon</h3>
-        <p>
-          <em>August 2019 to May 2021</em>
-        </p>
-        <p>
-          <strong>Software Engineer</strong>
-        </p>
-        <ul>
-          <li>
-            Developed full-stack applications using various technology stacks, improving system
-            efficiency and performance.
-          </li>
-          <li>Engineered a remote power management microservice for lab equipment.</li>
-          <li>
-            Built a REST API for a demonstration site, allowing the sales team to showcase products
-            and services to potential customers remotely.
-          </li>
-          <li>
-            Migrated the demonstration site to React.js from jQuery for improved performance and
-            user experience. Back-end developed using ASP.NET and MongoDB.
-          </li>
-          <li>Developed a QA application to generate network traffic using PCAPs.</li>
-          <li>
-            Created a power consumption monitoring dashboard for lab devices, providing vital
-            statistics to users.
-          </li>
-        </ul>
+        {experiences.map((experience) => {
+          return (
+            <>
+              <h3>{experience.company}</h3>
+              <p>
+                <em>{experience.duration}</em>
+              </p>
+              <p>
+                <strong>{experience.title}</strong>
+              </p>
+              <ul>
+                {experience.accomplishments.map((curr) => (
+                  <li>{curr}</li>
+                ))}
+              </ul>
+            </>
+          );
+        })}
         <h2>Activities and Projects</h2>
         <h3>Viking Robotics Society (Portland State University)</h3>
         <p>
