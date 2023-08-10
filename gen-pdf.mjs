@@ -3,7 +3,7 @@ import { readFileSync, readdirSync } from "fs";
 
 (async () => {
   // Create a browser instance
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
 
   // Create a new page
   const page = await browser.newPage();
