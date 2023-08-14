@@ -103,14 +103,11 @@ export default function Resume() {
           duration="September 2016 to Summer 2020"
           title="Vice President"
           accomplishments={[
-            "Major Code contributor and Collaborator",
             "Developed several robotics projects using embedded C++",
-            "Built a .NET application in C# using Microsoft Kinect camera to control a robot remotely through gestures",
             <>
-              C# code for the motion control:
-              <a href="https://github.com/pdx-robotics/KinectKHR1">
-                https://github.com/pdx-robotics/KinectKHR1
-              </a>
+              Built a .NET application in C# using Microsoft Kinect camera to control a robot
+              remotely through gestures [
+              <a href="https://github.com/pdx-robotics/KinectKHR1">Source Code</a>]
             </>,
           ]}
         />
