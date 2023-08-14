@@ -43,6 +43,25 @@ const experiences: {
   },
 ];
 
+const Section = ({ company, duration, title, accomplishments }) => {
+  return (
+    <>
+      <h3>{company}</h3>
+      <p>
+        <em>{duration}</em>
+      </p>
+      <p>
+        <strong>{title}</strong>
+      </p>
+      <ul>
+        {accomplishments.map((curr, idx) => (
+          <li key={curr?.key ?? idx}>{curr}</li>
+        ))}
+      </ul>
+    </>
+  );
+};
+
 export default function Home() {
   return (
     <div>
@@ -71,51 +90,29 @@ export default function Home() {
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
         <h2>Experience</h2>
-        {experiences.map((experience) => {
-          return (
-            <>
-              <h3>{experience.company}</h3>
-              <p>
-                <em>{experience.duration}</em>
-              </p>
-              <p>
-                <strong>{experience.title}</strong>
-              </p>
-              <ul>
-                {experience.accomplishments.map((curr) => (
-                  <li>{curr}</li>
-                ))}
-              </ul>
-            </>
-          );
-        })}
+        {experiences.map((experiences) => (
+          <Section {...experiences} />
+        ))}
         <h2>Activities and Projects</h2>
-        <h3>Viking Robotics Society (Portland State University)</h3>
-        <p>
-          <em>September 2016 to summer 2020</em>
-        </p>
-        <p>
-          <strong>Vice President of PSU’s Robotics Club</strong>
-        </p>
-        <ul>
-          <li>Major Code contributor and Collaborator</li>
-          <li>Developed several robotics projects using embedded C++</li>
-          <li>
-            Built a .NET application in C# using Microsoft Kinect camera to control a robot remotely
-            through gestures.
-          </li>
-          <li>
+        <Section
+          company="Viking Robotics Society (Portland State University)"
+          duration="September 2016 to summer 2020"
+          title="Vice President of PSU’s Robotics Club"
+          accomplishments={[
+            "Major Code contributor and Collaborator",
+            "Developed several robotics projects using embedded C++",
+            "Built a .NET application in C# using Microsoft Kinect camera to control a robot remotely through gestures",
             <a href="https://robotics.ece.pdx.edu/projects/index.php?name=Humanoid%20Robot%20KHR-1">
               Site Link
-            </a>
-          </li>
-          <li>
-            C# code for the motion control:
-            <a href="https://github.com/pdx-robotics/KinectKHR1">
-              https://github.com/pdx-robotics/KinectKHR1
-            </a>
-          </li>
-        </ul>
+            </a>,
+            <>
+              C# code for the motion control:
+              <a href="https://github.com/pdx-robotics/KinectKHR1">
+                https://github.com/pdx-robotics/KinectKHR1
+              </a>
+            </>,
+          ]}
+        />
         <h2>Education</h2>
         <h3>Portland State University</h3>
         <p>
