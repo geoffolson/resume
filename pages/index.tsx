@@ -45,20 +45,24 @@ const experiences: {
 
 const Section = ({ company, duration, title, accomplishments }) => {
   return (
-    <>
-      <h3>{company}</h3>
-      <p>
-        <em>{duration}</em>
-      </p>
-      <p>
-        <strong>{title}</strong>
-      </p>
-      <ul>
-        {accomplishments.map((curr, idx) => (
-          <li key={curr?.key ?? idx}>{curr}</li>
-        ))}
-      </ul>
-    </>
+    <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+      <div>
+        <h3>{company}</h3>
+        <ul style={{ width: "30rem" }}>
+          {accomplishments.map((curr, idx) => (
+            <li key={curr?.key ?? idx}>{curr}</li>
+          ))}
+        </ul>
+      </div>
+      <div style={{ width: "13rem", marginTop: "0.3rem" }}>
+        <p style={{ margin: "0" }}>
+          <strong>{title}</strong>
+        </p>
+        <p style={{ margin: "0", marginTop: "0.5rem" }}>
+          <em>{duration}</em>
+        </p>
+      </div>
+    </div>
   );
 };
 
@@ -90,14 +94,14 @@ export default function Home() {
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
         <h2>Experience</h2>
-        {experiences.map((experiences) => (
-          <Section {...experiences} />
+        {experiences.map((experience) => (
+          <Section {...experience} />
         ))}
         <h2>Activities and Projects</h2>
         <Section
           company="Viking Robotics Society (Portland State University)"
           duration="September 2016 to summer 2020"
-          title="Vice President of PSU’s Robotics Club"
+          title="Vice President"
           accomplishments={[
             "Major Code contributor and Collaborator",
             "Developed several robotics projects using embedded C++",
