@@ -66,7 +66,7 @@ const Section = ({ company, duration, title, accomplishments }) => {
   );
 };
 
-export default function Home() {
+export default function Resume() {
   return (
     <div>
       <Head>
@@ -94,8 +94,8 @@ export default function Home() {
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
         <h2>Experience</h2>
-        {experiences.map((experience) => (
-          <Section {...experience} />
+        {experiences.map((experience, idx) => (
+          <Section key={idx} {...experience} />
         ))}
         <h2>Activities and Projects</h2>
         <Section
