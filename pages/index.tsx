@@ -9,7 +9,7 @@ const experiences: {
   {
     company: "Allbound",
     title: "Senior Software Engineer",
-    duration: "August 2022 to Current",
+    duration: "August 2022 to Present",
     accomplishments: [
       "Architected and developed the front-end of Allbound's new payment module.",
       "Served as a principal consultant for the architecture of future Node APIs.",
@@ -106,9 +106,6 @@ export default function Resume() {
             "Major Code contributor and Collaborator",
             "Developed several robotics projects using embedded C++",
             "Built a .NET application in C# using Microsoft Kinect camera to control a robot remotely through gestures",
-            <a href="https://robotics.ece.pdx.edu/projects/index.php?name=Humanoid%20Robot%20KHR-1">
-              Site Link
-            </a>,
             <>
               C# code for the motion control:
               <a href="https://github.com/pdx-robotics/KinectKHR1">
@@ -121,7 +118,10 @@ export default function Resume() {
         {[
           {
             company: "Portland State University",
-            accomplishments: ["Bachelors of Science in Computer Science"],
+            accomplishments: [
+              "Bachelors in Computer Science",
+              "Vice President of PSU’s Robotics Club",
+            ],
             title: null,
             duration: "September 2016 to Summer 2020",
           },
@@ -135,8 +135,8 @@ export default function Resume() {
             title: null,
             duration: "Summer 2011",
           },
-        ].map((education) => (
-          <Section {...education} />
+        ].map((education, idx) => (
+          <Section key={idx} {...education} />
         ))}
       </div>
 
