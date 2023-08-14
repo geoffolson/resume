@@ -100,7 +100,7 @@ export default function Resume() {
         <h2>Activities and Projects</h2>
         <Section
           company="Viking Robotics Society (Portland State University)"
-          duration="September 2016 to summer 2020"
+          duration="September 2016 to Summer 2020"
           title="Vice President"
           accomplishments={[
             "Major Code contributor and Collaborator",
@@ -118,21 +118,26 @@ export default function Resume() {
           ]}
         />
         <h2>Education</h2>
-        <h3>Portland State University</h3>
-        <p>
-          <em>September 2016 to summer 2020</em>
-        </p>
-        <p>
-          <strong>Bachelor of Science in Computer Science</strong>
-        </p>
-        <h3>Mt. Hood Community college</h3>
-        <p>
-          <em>Graduated summer 2011</em>
-        </p>
-        <p>
-          <strong>Associate of Applied Science, with honors </strong>
-        </p>
-        <p>Graduated second in class with a 3.92 GPA</p>
+        {[
+          {
+            company: "Portland State University",
+            accomplishments: ["Bachelors of Science in Computer Science"],
+            title: null,
+            duration: "September 2016 to Summer 2020",
+          },
+          {
+            company: "Mt. Hood Community college",
+            accomplishments: [
+              "Associate of Applied Science, with honors",
+              "Second in class",
+              "3.92 GPA",
+            ],
+            title: null,
+            duration: "Summer 2011",
+          },
+        ].map((education) => (
+          <Section {...education} />
+        ))}
       </div>
 
       <style jsx>{``}</style>
