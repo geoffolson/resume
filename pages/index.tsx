@@ -12,9 +12,9 @@ const experiences: {
     duration: "August 2022 to Present",
     accomplishments: [
       "Architected and developed the front-end of Allbound's new payment module.",
-      "Served as a principal consultant for the architecture of future Node APIs.",
+      "Served as a consultant for the architecture of future Node APIs.",
       "Engineered a client-side database solution for efficient local storage and data table management.",
-      "Developed a new MDF feature that directly contributed to the acquisition of new clients.",
+      "Developed a new MDF feature directly contributing to the acquisition of new clients.",
     ],
   },
   {
