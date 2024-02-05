@@ -9,7 +9,7 @@ const experiences: {
   {
     company: "Allbound",
     title: "Senior Software Engineer",
-    duration: "August 2022 to Present",
+    duration: "August 2022 to January 2024",
     accomplishments: [
       "Architected and developed the front-end of Allbound's new payment module.",
       "Served as a consultant for the architecture of future Node APIs.",
