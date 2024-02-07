@@ -11,10 +11,10 @@ const experiences: {
     title: "Senior Software Engineer",
     duration: "August 2022 to January 2024",
     accomplishments: [
-      "Architected and developed the front-end of Allbound's new payment module.",
-      "Served as a consultant for the architecture of future Node APIs.",
+      "Architected and developed the front-end of Allbound's new payment module using Typescript, React.js, and Redux.",
+      "Developed new UI components and documented with Storybook",
       "Engineered a client-side database solution for efficient local storage and data table management.",
-      "Developed a new MDF feature directly contributing to the acquisition of new clients.",
+      "Developed a new MDF feature in Typescript, React.js, and Redux directly contributing to the acquisition of new clients.",
     ],
   },
   {
@@ -22,8 +22,8 @@ const experiences: {
     title: "Software Engineer",
     duration: "May 2021 to August 2022",
     accomplishments: [
-      "Designed and developed full-stack web applications to meet the specific needs of clients.",
-      "Oversaw maintenance and feature enhancements for existing applications.",
+      "Designed and developed full-stack web applications in Typescript, React.js, and Django or Express to meet the specific needs of clients.",
+      "Oversaw maintenance and feature enhancements for existing applications in React.js, and Typescript.",
       "Optimized performance of a legacy application to support client's growing database, improving scalability.",
       "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.",
     ],
@@ -33,12 +33,12 @@ const experiences: {
     title: "Software Engineer",
     duration: "August 2019 to May 2021",
     accomplishments: [
+      "Created a power consumption monitoring dashboard for lab devices in React.js, providing vital statistics to users",
+      "Migrated the company demonstration site to React.js from jQuery for improved performance and user experience. Back-end developed using ASP.NET and MongoDB.",
       "Developed full-stack applications using various technology stacks, improving system efficiency and performance.",
       "Engineered a remote power management microservice for lab equipment.",
       "Built a REST API for a demonstration site, allowing the sales team to showcase products and services to potential customers remotely.",
-      "Migrated the demonstration site to React.js from jQuery for improved performance and user experience. Back-end developed using ASP.NET and MongoDB.",
       "Developed a QA application to generate network traffic using PCAPs.",
-      "Created a power consumption monitoring dashboard for lab devices, providing vital statistics to users",
     ],
   },
 ];
@@ -78,10 +78,10 @@ export default function Resume() {
         <div className="email">geoffrey.olson.jr@gmail.com</div>
         <h2>Summary</h2>
         <p>
-          Accomplished Full-stack Software Engineer, specializing in designing and implementing
-          software systems with a range of technologies. Proven ability to lead development teams
-          and consult on enterprise-level projects, with a keen focus on optimizing performance and
-          enhancing user experience.
+          Accomplished Software Engineer, specializing in designing and implementing software
+          systems with a range of technologies. Proven ability to lead development teams and consult
+          on enterprise-level projects, with a keen focus on optimizing performance and enhancing
+          user experience.
         </p>
         <h2>Technologies</h2>
         <p>
