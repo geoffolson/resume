@@ -22,10 +22,10 @@ const experiences: {
     title: "Software Engineer",
     duration: "May 2021 to August 2022",
     accomplishments: [
-      "Designed and developed full-stack web applications in Typescript, React.js, and Django or Express to meet the specific needs of clients.",
-      "Oversaw maintenance and feature enhancements for existing applications in React.js, and Typescript.",
+      "Designed and developed full-stack web applications in Typescript, React.js, Redux, Material-ui, and Django or Express to meet the specific needs of clients.",
+      "Oversaw maintenance and feature enhancements for existing applications in React.js, Redux, Material-ui, and Typescript.",
       "Optimized performance of a legacy application to support client's growing database, improving scalability.",
-      "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.",
+      "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, Material-ui, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.",
     ],
   },
   {
