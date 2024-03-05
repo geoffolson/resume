@@ -30,6 +30,11 @@ h3 {
   font-size: 0.8em;
   font-weight: 600;
 }
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 em {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(50, 50, 50);

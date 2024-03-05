@@ -75,7 +75,10 @@ export default function Resume() {
       </Head>
       <div className="resume">
         <h1>Geoffrey Olson Jr.</h1>
-        <div className="email">geoffrey.olson.jr@gmail.com</div>
+        <div className="social-media">
+          <div className="email">geoffrey.olson.jr@gmail.com</div>
+          <div className="email">https://www.linkedin.com/in/geoffrey-olson-jr/</div>
+        </div>
         <h2>Summary</h2>
         <p>
           Accomplished Software Engineer, specializing in designing and implementing software
