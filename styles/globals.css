@@ -25,7 +25,10 @@ h3 {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }
-.email {
+.social-media-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   text-align: center;
   font-size: 0.8em;
   font-weight: 600;

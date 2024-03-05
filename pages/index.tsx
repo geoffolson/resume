@@ -1,11 +1,16 @@
 import Head from "next/head";
+import { LinkedInIcon } from "./LinkedInIcon";
+import { EmailIcon } from "./EmailIcon";
+import { ReactComponentElement } from "react";
 
-const experiences: {
+type Experience = {
   company: string;
   title: string;
   duration: string;
-  accomplishments: string[];
-}[] = [
+  accomplishments: React.ReactNode[];
+};
+
+const experiences: Experience[] = [
   {
     company: "Allbound",
     title: "Senior Software Engineer",
@@ -43,15 +48,15 @@ const experiences: {
   },
 ];
 
-const Section = ({ company, duration, title, accomplishments }) => {
+const Section = ({ company, duration, title, accomplishments }: Experience) => {
   return (
     <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
       <div>
         <h3>{company}</h3>
-        <ul style={{ width: "30rem" }}>
-          {accomplishments.map((curr, idx) => (
-            <li key={curr?.key ?? idx}>{curr}</li>
-          ))}
+        <ul style={{ width: "40rem" }}>
+          {accomplishments.map((curr, idx) => {
+            return <li key={idx}>{curr}</li>;
+          })}
         </ul>
       </div>
       <div style={{ width: "13rem", marginTop: "0.3rem" }}>
@@ -76,8 +81,14 @@ export default function Resume() {
       <div className="resume">
         <h1>Geoffrey Olson Jr.</h1>
         <div className="social-media">
-          <div className="email">geoffrey.olson.jr@gmail.com</div>
-          <div className="email">https://www.linkedin.com/in/geoffrey-olson-jr/</div>
+          <div className="social-media-item">
+            <EmailIcon size={14} />
+            geoffrey.olson.jr@gmail.com
+          </div>
+          <div className="social-media-item">
+            <LinkedInIcon size={14} />
+            https://www.linkedin.com/in/geoffrey-olson-jr/
+          </div>
         </div>
         <h2>Summary</h2>
         <p>
