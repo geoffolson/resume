@@ -19,7 +19,8 @@ const experiences: Experience[] = [
       "Architected and developed the front-end of Allbound's new payment module using Typescript, React.js, and Redux.",
       "Developed new UI components and documented with Storybook",
       "Engineered a client-side database solution for efficient local storage and data table management.",
-      "Developed a new MDF feature in Typescript, React.js, and Redux directly contributing to the acquisition of new clients.",
+      "Developed a new MDF feature in Typescript, React.js, Redux, Nestjs, and Node directly contributing to the acquisition of new clients.",
+      "Consulted and worked on new Nodejs architecture for future micro services using Nest.js, MySQL, and MongoDB",
     ],
   },
   {
@@ -38,12 +39,12 @@ const experiences: Experience[] = [
     title: "Software Engineer",
     duration: "August 2019 to May 2021",
     accomplishments: [
-      "Created a power consumption monitoring dashboard for lab devices in React.js, providing vital statistics to users",
+      "Created a power consumption monitoring dashboard for lab devices in React.js, and Flask(python) providing vital statistics to users",
       "Migrated the company demonstration site to React.js from jQuery for improved performance and user experience. Back-end developed using ASP.NET and MongoDB.",
-      "Developed full-stack applications using various technology stacks, improving system efficiency and performance.",
+      "Developed full-stack applications using various technology stacks such as PHP, Python, MySQL, React.js, Mongodb, Flask, and Node improving system efficiency and performance.",
       "Engineered a remote power management microservice for lab equipment.",
       "Built a REST API for a demonstration site, allowing the sales team to showcase products and services to potential customers remotely.",
-      "Developed a QA application to generate network traffic using PCAPs.",
+      "Developed a QA application to generate network traffic using PCAPs in Nodejs and React.js.",
     ],
   },
 ];
@@ -53,13 +54,13 @@ const Section = ({ company, duration, title, accomplishments }: Experience) => {
     <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
       <div>
         <h3>{company}</h3>
-        <ul style={{ width: "40rem" }}>
+        <ul style={{ width: "45rem" }}>
           {accomplishments.map((curr, idx) => {
             return <li key={idx}>{curr}</li>;
           })}
         </ul>
       </div>
-      <div style={{ width: "13rem", marginTop: "0.3rem" }}>
+      <div style={{ width: "15rem", marginTop: "0.3rem" }}>
         <p style={{ margin: "0" }}>
           <strong>{title}</strong>
         </p>
@@ -140,7 +141,7 @@ export default function Resume() {
             company: "Mt. Hood Community college",
             accomplishments: [
               "Associate of Applied Science, with honors",
-              "Second in class",
+              // "Second in class",
               "3.92 GPA",
             ],
             title: null,
