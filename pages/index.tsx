@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { LinkedInIcon } from "./LinkedInIcon";
 import { EmailIcon } from "./EmailIcon";
-import { ReactComponentElement } from "react";
 
 type Experience = {
   company: string;
@@ -54,7 +53,7 @@ const Section = ({ company, duration, title, accomplishments }: Experience) => {
     <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
       <div>
         <h3>{company}</h3>
-        <ul style={{ width: "45rem" }}>
+        <ul style={{ width: "40rem" }}>
           {accomplishments.map((curr, idx) => {
             return <li key={idx}>{curr}</li>;
           })}
@@ -88,16 +87,9 @@ export default function Resume() {
           </div>
           <div className="social-media-item">
             <LinkedInIcon size={14} />
-            https://www.linkedin.com/in/geoffrey-olson-jr/
+            linkedin.com/in/geoffrey-olson-jr
           </div>
         </div>
-        <h2>Summary</h2>
-        <p>
-          Accomplished Software Engineer, specializing in designing and implementing software
-          systems with a range of technologies. Proven ability to lead development teams and consult
-          on enterprise-level projects, with a keen focus on optimizing performance and enhancing
-          user experience.
-        </p>
         <h2>Technologies</h2>
         <p>
           <strong>Languages:</strong> TypeScript, JavaScript, JSX, C, C++, C#, Python, SQL, PHP,
@@ -108,11 +100,18 @@ export default function Resume() {
           <br />
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
+        {/* <h2>Summary</h2>
+        <p>
+          Accomplished Software Engineer, specializing in designing and implementing software
+          systems with a range of technologies. Proven ability to lead development teams and consult
+          on enterprise-level projects, with a keen focus on optimizing performance and enhancing
+          user experience.
+        </p> */}
         <h2>Experience</h2>
         {experiences.map((experience, idx) => (
           <Section key={idx} {...experience} />
         ))}
-        <h2>Activities and Projects</h2>
+        {/* <h2>Activities and Projects</h2>
         <Section
           company="Viking Robotics Society (Portland State University)"
           duration="September 2016 to Summer 2020"
@@ -125,7 +124,7 @@ export default function Resume() {
               <a href="https://github.com/pdx-robotics/KinectKHR1">Source Code</a>]
             </>,
           ]}
-        />
+        /> */}
         <h2>Education</h2>
         {[
           {
