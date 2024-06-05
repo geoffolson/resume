@@ -15,11 +15,12 @@ const experiences: Experience[] = [
     title: "Senior Software Engineer",
     duration: "August 2022 to January 2024",
     accomplishments: [
+      "Architected and implemented remote development environments using AWS Lightsail, Node.js, and Docker, enhancing developer productivity",
+      "Developed a new MDF feature in Typescript, Node, Nestjs, AWS lambda, RDS, Secrets Manager, React.js, and Redux directly contributing to the acquisition of new clients.",
+      "Consulted and worked on new Nodejs architecture for future micro services using AWS EC2, Secrets Manager, Nest.js, MySQL, and MongoDB",
       "Architected and developed the front-end of Allbound's new payment module using Typescript, React.js, and Redux.",
       "Developed new UI components and documented with Storybook",
       "Engineered a client-side database solution for efficient local storage and data table management.",
-      "Developed a new MDF feature in Typescript, React.js, Redux, Nestjs, and Node directly contributing to the acquisition of new clients.",
-      "Consulted and worked on new Nodejs architecture for future micro services using Nest.js, MySQL, and MongoDB",
     ],
   },
   {
@@ -27,10 +28,10 @@ const experiences: Experience[] = [
     title: "Software Engineer",
     duration: "May 2021 to August 2022",
     accomplishments: [
-      "Designed and developed full-stack web applications in Typescript, React.js, Redux, Material-ui, and Django or Express to meet the specific needs of clients.",
+      "Designed and developed full-stack web applications in Typescript, React.js, Redux, Material-ui, AWS lambda, RDS, and Django(Python) or Express to meet the specific needs of clients.",
       "Oversaw maintenance and feature enhancements for existing applications in React.js, Redux, Material-ui, and Typescript.",
       "Optimized performance of a legacy application to support client's growing database, improving scalability.",
-      "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, Material-ui, React.js with hooks and/or Redux, Node or Django, and PostgreSQL.",
+      "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, Material-ui, React.js with hooks and/or Redux, AWS EC2, RDS, Node or Django(Python), and PostgreSQL.",
     ],
   },
   {
@@ -92,11 +93,11 @@ export default function Resume() {
         </div>
         <h2>Technologies</h2>
         <p>
-          <strong>Languages:</strong> TypeScript, JavaScript, JSX, C, C++, C#, Python, SQL, PHP,
+          <strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, JSX, C, C++, C#, SQL,
           Java
           <br />
-          <strong>Technologies:</strong> React.js, RESTful APIs, SASS, BASH, Express, Node.js,
-          Flask, Docker, jQuery
+          <strong>Technologies:</strong> AWS EC2, Lambda, RDS, React.js, RESTful APIs, SASS, BASH,
+          Express, Node.js, Flask, Docker, jQuery
           <br />
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
@@ -150,7 +151,6 @@ export default function Resume() {
           <Section key={idx} {...education} />
         ))}
       </div>
-
       <style jsx>{``}</style>
     </div>
   );
