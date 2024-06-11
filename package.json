@@ -5,7 +5,7 @@
     "build": "next build",
     "gen-pdf": "next build && node gen-pds.mjs",
     "start": "next start",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -nojekyll"
   },
   "dependencies": {
     "next": "latest",
