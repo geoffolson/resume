@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { LinkedInIcon } from "./LinkedInIcon";
 import { EmailIcon } from "./EmailIcon";
+import { PhoneIcon } from "./PhoneIcon";
 
 type Experience = {
   company: string;
@@ -28,7 +29,7 @@ const experiences: Experience[] = [
     title: "Software Engineer",
     duration: "May 2021 to August 2022",
     accomplishments: [
-      "Designed and developed full-stack web applications in Typescript, React.js, Redux, Material-ui, AWS lambda, RDS, and Django(Python) or Express to meet the specific needs of clients.",
+      "Designed and developed full-stack web applications in Typescript, React.js, Redux, Material-ui, AWS ECS, RDS, and Django(Python) or Express to meet the specific needs of clients.",
       "Oversaw maintenance and feature enhancements for existing applications in React.js, Redux, Material-ui, and Typescript.",
       "Optimized performance of a legacy application to support client's growing database, improving scalability.",
       "Collaborated with UI/UX designers and team members to build several successful MVPs using TypeScript, Material-ui, React.js with hooks and/or Redux, AWS EC2, RDS, Node or Django(Python), and PostgreSQL.",
@@ -90,34 +91,39 @@ export default function Resume() {
             <LinkedInIcon size={14} />
             linkedin.com/in/geoffrey-olson-jr
           </div>
+          <div className="social-media-item">
+            <PhoneIcon size={14} />
+            (503) 709-8277
+          </div>
         </div>
         <h2>Technologies</h2>
         <p>
           <strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, JSX, C, C++, C#, SQL,
           Java
           <br />
-          <strong>Technologies:</strong> AWS EC2, Lambda, RDS, React.js, RESTful APIs, SASS, BASH,
-          Express, Node.js, Flask, Docker, jQuery
+          <strong>Technologies:</strong> React.js, RESTful APIs, SASS, BASH, Express, Node.js,
+          Flask, Docker, AWS EC2, S3, ECS, Lambda, and RDS,
           <br />
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
-        {/* <h2>Summary</h2>
+        <h2>Summary</h2>
         <p>
-          Accomplished Software Engineer, specializing in designing and implementing software
-          systems with a range of technologies. Proven ability to lead development teams and consult
-          on enterprise-level projects, with a keen focus on optimizing performance and enhancing
-          user experience.
-        </p> */}
+          Software Engineer, specializing in designing and implementing software systems with a
+          range of technologies. Proven ability to lead development teams and consult on
+          enterprise-level projects, with a focus on optimizing performance and enhancing user
+          experience.
+        </p>
         <h2>Experience</h2>
         {experiences.map((experience, idx) => (
           <Section key={idx} {...experience} />
         ))}
-        {/* <h2>Activities and Projects</h2>
+        <h2>Activities and Projects</h2>
         <Section
           company="Viking Robotics Society (Portland State University)"
           duration="September 2016 to Summer 2020"
           title="Vice President"
           accomplishments={[
+            "Developed software application in Python interfacing a rapsberry pi driven robotic arm in QA automation for testing PCB board distortion. ",
             "Developed several robotics projects using embedded C++",
             <>
               Built a .NET application in C# using Microsoft Kinect camera to control a robot
@@ -125,7 +131,7 @@ export default function Resume() {
               <a href="https://github.com/pdx-robotics/KinectKHR1">Source Code</a>]
             </>,
           ]}
-        /> */}
+        />
         <h2>Education</h2>
         {[
           {
