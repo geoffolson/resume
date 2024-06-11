@@ -2,8 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node gen-pdf.mjs",
-    "start": "next start"
+    "build": "next build",
+    "gen-pdf": "next build && node gen-pds.mjs",
+    "start": "next start",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "latest",
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@types/node": "20.4.8",
     "@types/react": "18.2.18",
+    "gh-pages": "^6.1.1",
     "typescript": "5.1.6"
   }
 }
