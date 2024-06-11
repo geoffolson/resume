@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { LinkedInIcon } from "./LinkedInIcon";
-import { EmailIcon } from "./EmailIcon";
-import { PhoneIcon } from "./PhoneIcon";
+import { LinkedInIcon } from "../components/LinkedInIcon";
+import { EmailIcon } from "../components/EmailIcon";
+import { PhoneIcon } from "../components/PhoneIcon";
 
 type Experience = {
   company: string;
