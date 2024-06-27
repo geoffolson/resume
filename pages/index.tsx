@@ -52,22 +52,24 @@ const experiences: Experience[] = [
 
 const Section = ({ company, duration, title, accomplishments }: Experience) => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
-      <div>
-        <h3>{company}</h3>
-        <ul style={{ width: "40rem" }}>
-          {accomplishments.map((curr, idx) => {
-            return <li key={idx}>{curr}</li>;
-          })}
-        </ul>
-      </div>
-      <div style={{ width: "15rem", marginTop: "0.3rem" }}>
-        <p style={{ margin: "0" }}>
-          <strong>{title}</strong>
-        </p>
-        <p style={{ margin: "0", marginTop: "0.5rem" }}>
-          <em>{duration}</em>
-        </p>
+    <div>
+      <h3>{company}</h3>
+      <div className="section">
+        <div>
+          <ul className="list">
+            {accomplishments.map((curr, idx) => {
+              return <li key={idx}>{curr}</li>;
+            })}
+          </ul>
+        </div>
+        <div className="job-title">
+          <div>
+            <strong>{title}</strong>
+          </div>
+          <div>
+            <em>{duration}</em>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -98,20 +100,20 @@ export default function Resume() {
         </div>
         <h2>Technologies</h2>
         <p>
-          <strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, JSX, C, C++, C#, SQL,
-          Java
+          <strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, JSX,
+          C, C++, C#, SQL, Java
           <br />
-          <strong>Technologies:</strong> React.js, RESTful APIs, SASS, BASH, Express, Node.js,
-          Flask, Docker, AWS EC2, S3, ECS, Lambda, and RDS,
+          <strong>Technologies:</strong> React.js, RESTful APIs, SASS, BASH,
+          Express, Node.js, Flask, Docker, AWS EC2, S3, ECS, Lambda, and RDS,
           <br />
           <strong>Operating Systems:</strong> Linux/Unix, Windows
         </p>
         <h2>Summary</h2>
         <p>
-          Software Engineer, specializing in designing and implementing software systems with a
-          range of technologies. Proven ability to lead development teams and consult on
-          enterprise-level projects, with a focus on optimizing performance and enhancing user
-          experience.
+          Software Engineer, specializing in designing and implementing software
+          systems with a range of technologies. Proven ability to lead
+          development teams and consult on enterprise-level projects, with a
+          focus on optimizing performance and enhancing user experience.
         </p>
         <h2>Experience</h2>
         {experiences.map((experience, idx) => (
@@ -126,9 +128,12 @@ export default function Resume() {
             "Developed software application in Python interfacing a rapsberry pi driven robotic arm in QA automation for testing PCB board distortion. ",
             "Developed several robotics projects using embedded C++",
             <>
-              Built a .NET application in C# using Microsoft Kinect camera to control a robot
-              remotely through gestures [
-              <a href="https://github.com/pdx-robotics/KinectKHR1">Source Code</a>]
+              Built a .NET application in C# using Microsoft Kinect camera to
+              control a robot remotely through gestures [
+              <a href="https://github.com/pdx-robotics/KinectKHR1">
+                Source Code
+              </a>
+              ]
             </>,
           ]}
         />
