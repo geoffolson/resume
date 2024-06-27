@@ -55,13 +55,11 @@ const Section = ({ company, duration, title, accomplishments }: Experience) => {
     <div>
       <h3>{company}</h3>
       <div className="section">
-        <div>
-          <ul className="list">
-            {accomplishments.map((curr, idx) => {
-              return <li key={idx}>{curr}</li>;
-            })}
-          </ul>
-        </div>
+        <ul className="section-list">
+          {accomplishments.map((curr, idx) => {
+            return <li key={idx}>{curr}</li>;
+          })}
+        </ul>
         <div className="job-title">
           <div>
             <strong>{title}</strong>
