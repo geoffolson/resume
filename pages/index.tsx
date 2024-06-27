@@ -85,18 +85,25 @@ export default function Resume() {
       <div className="resume">
         <h1>Geoffrey Olson Jr.</h1>
         <div className="social-media">
-          <div className="social-media-item">
+          <a
+            className="social-media-item"
+            href="mailto:geoffrey.olson.jr@gmail.com"
+          >
             <EmailIcon size={14} />
             geoffrey.olson.jr@gmail.com
-          </div>
-          <div className="social-media-item">
+          </a>
+          <a
+            className="social-media-item"
+            target="_blank"
+            href="https://linkedin.com/in/geoffrey-olson-jr"
+          >
             <LinkedInIcon size={14} />
             linkedin.com/in/geoffrey-olson-jr
-          </div>
-          <div className="social-media-item">
+          </a>
+          <a className="social-media-item" href="tel:503-709-8277">
             <PhoneIcon size={14} />
             (503) 709-8277
-          </div>
+          </a>
         </div>
         <h2>Technologies</h2>
         <p>
