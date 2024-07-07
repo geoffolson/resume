@@ -2,7 +2,7 @@
 
 This web based resume is statically built with Nextjs
 
-## build
+## Build
 
 To generate static page into the out directory
 `npm run build`
