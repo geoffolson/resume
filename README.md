@@ -1,4 +1,4 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This web based resume is statically built with Nextjs
 
 To generate static page into the out directory
 `npm run build`
