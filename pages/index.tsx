@@ -12,6 +12,15 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
+    company: "CVS",
+    title: "Full-Stack Software Engineer",
+    duration: "August 2024 to Present",
+    accomplishments: [
+      "Development of new Mobile price scanning application in Nextjs",
+      "Developed new React-native like navigation animations compatible with server-side components",
+    ],
+  },
+  {
     company: "Allbound",
     title: "Senior Software Engineer",
     duration: "August 2022 to January 2024",
